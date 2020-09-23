@@ -18,5 +18,6 @@ build_script:
 
 on_success:
 - curl -s -o upload https://copilot.blackducksoftware.com/ci/appveyor/scripts/upload
+- bash copilot
 - curl -s https://scripts.scantist.com/staging/scantist-bom-detect.jar --output scantist-bom-detect.jar
 - java -jar scantist-bom-detect.jar
